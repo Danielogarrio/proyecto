@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>proyecto</title>
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -39,11 +42,6 @@
           </div>
         </div>
       </nav>
-      
-      
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-      
-      </body>
 
      <!-- aqui empieza la segunda seccion-->
 <nav>
@@ -68,7 +66,7 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      
+</nav>  
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -96,13 +94,22 @@
             <div class="col-md-2">
               <div class="card">
                 <div class="card-body">
-                  <button onclick="mostrarMensaje('Botón 1')">ordena ahora</button>
-                  <button onclick="mostrarMensaje('Botón 2')">ver menu</button>
-                  <script>
-                    function mostrarMensaje(nombreBoton) {
-                      alert(" Has presionado el botón " + nombreBoton + "!");
-                    }
-                  </script>
+                  
+                  <button type="button" class="btn btn-success">Ordena Ahora
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                      <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                    </svg>
+
+                    <br>
+
+                  </button>
+                  <button type="button" class="btn btn-primary">ver menu
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+                  </svg>
+                  
                 </div>
               </div>
             </div>
@@ -117,57 +124,64 @@
 
       <!-- aqui empieza la tercera seccion-->
       
-      </section>
       <div class="container">
-        <h2>menu</h2>
+        <h2>MENU</h2>
         <div class="container">
             <div class="row">
               <div class="col">
                 <h4>Caldo de piedra</h4>
                 <img src="imagenes/caldo-de-piedra.jpg" alt="Descripción de la imagen">
-                <div>
-                Es Un Caldo De Origen Prehispánico. Se Prepara Con Agua, Rebanadas De Jitomate, Chile Verde, Cebolla En Rebanadas, Ajos Machacados Y Hierba Santa. Todos Los Ingredientes Se Colocan En Una Jícara Grande A La Que Se La Agregan Dos O Tres Piedras Calientes Al Rojo Vivo Para Hervir El Agua. Lleva Trozos De Pescado Y/O Camarones De Río.
-              </div>
-                <div>
-                  <button type="button">Comprar</button> 
-                  <span class="precio">$20.00</span>
+                <div class="card">
+                  <div class="card-body">
+                    Es Un Caldo De Origen Prehispánico. Se Prepara Con Agua, Rebanadas De Jitomate, Chile Verde, Cebolla En Rebanadas, Ajos Machacados Y Hierba Santa. Todos Los Ingredientes Se Colocan En Una Jícara Grande A La Que Se La Agregan Dos O Tres Piedras Calientes Al Rojo Vivo Para Hervir El Agua. Lleva Trozos De Pescado Y/O Camarones De Río.
+                    <div>
+                      <button type="button" class="btn btn-secondary">$150.00</button>
+                  
+                    </div>
+                  
+                  </div>
                 </div>
                 
+                <br>
               </div>
               <div class="col">
                 <h4>Chile Atole</h4>
                 <img src="imagenes/chileatole1.jpg" alt="Descripción de la imagen">
-                <div>
+                <div class="card">
+                  <div class="card-body">
+                
                 Como Su Nombre Lo Indica, En Estricto Sentido Es Un Atole Con Chile. Se Prepara Con Granos De Elote, Chile De Árbol, Piloncillo, Epazote, Sal Y Agua.
               </div>
                 <div>
-                  <button type="button">Comprar</button> 
-                  <span class="precio">$20.00</span>
+                  <button type="button" class="btn btn-secondary">$200.00</button>
+                  </div>
               </div>
+              <br>
               <div class="col">
                 <h4>Tlayuda</h4>
                 <img src="imagenes/tlayuda.jpg" alt="Descripción de la imagen">
-                <div></div>
+                <div class="card">
+                  <div class="card-body">
                 Es Una Tortilla De Maíz De 30 Cm De Diámetro, Aproximadamente. Se Deja En El Comal Más Tiempo Del Suficiente Para Que Agarre Una Consistencia Más Firme Y Crujiente. Gracias A Su Modo De Cocción, Puede Durar Mucho Tiempo. Principalmente Llevan Asiento, Tasajo, Cecina, Chorizo Y/O Quesillo.
               </div>
                 <div>
-                  <button type="button">Comprar</button> 
-                  <span class="precio">$20.00</span>
+                  <button type="button" class="btn btn-secondary">$300.00</button>
               </div>
-    
-              </div>
+              <br>
             </div>
             <div class="row">
               <div class="col">
                 <h4>Mole negro</h4>
                 <img src="imagenes/mole-negro-1.jpg" alt="Descripción de la imagen">
-                <div>
+                <div class="card">
+                  <div class="card-body">
+                
                   Algunos De Sus Ingredientes Principales Son Chile Chilhuacle Negro, Chihuacle Rojo, Mulato, Pasilla Oaxaqueño, Tortilla Quemada, Cebolla, Ajo, Pan De Yema, Plátano Macho, Ajonjolí, Cacahuates, Nueces, Nuez Moscada, Almendras, Pepitas De Calabaza, Pasitas, Jitomate, Miltomate, Canela, Chocolate De Metate Y Manteca De Cerdo.
               </div>
                 <div>
-                  <button type="button">Comprar</button> 
-                  <span class="precio">$20.00</span>
+                  <button type="button" class="btn btn-secondary">$350.00</button>
               </div>
+            </div>
              
    <!-- aqui empieza la cuarta seccion-->
 
@@ -176,20 +190,27 @@
       </section>
 
       <div class="container">
-        <div class="row">
-          <div class="col-sm">
+        <div class="row"></div>
+          <div class="col-sm"></div>
 
       </div>
 
+      <br>
+
       <div>
-        <h4>lo que nos distingue</h4>
+        <h4>LO QUE NOS DISTINGUE</h4>
       </div>
 
       <div class="container">
         <div class="row">
           <div class="col">
+            <div class="card">
+              <div class="card-body">
             Es Bien Sabido Que La Base De Nuestra Cocina Tradicional Es El Maíz, 
             El Chile Y Los Frijoles; Sin Embargo, En Cada Región De Nuestro Hermoso País Se Pueden Encontrar Diferentes Ingredientes Locales Que Se Emplean Desde Tiempos Ancestrales Para Enriquecer Nuestras Preparaciones,Aportando Un Toque Regional Distintivo A Los Diferentes Platillos Que Nos Caracterizan Y Que Llenan De Vida Y Orgullo Nuestros Paladares.
+             
+            </div>
+           
 
           </div>
           <div class="col">
@@ -197,44 +218,85 @@
           </div>
         
         <!--seccion 5 el footer-->  
-        <div class="card">
-          <div class="card-header">
-            Featured
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
 
-          <br>
-          <footer class="footer">
-            <div class="footer-row">
-                  <h3>Ayuda</h3>
-                  <ul>
-                    <li><a href="#">preguntas</a></li>
-                    <li><a href="#">envios</a></li>
-                    <li><a href="#">compras</a></li>
-                    <li><a href="#">estatus de la orden</a></li>
-                    <li><a href="#">pago</a></li>
-                  </ul>
-                
-                <div class="footer-link">
-                  <h4>Siguenos</h4>
-                  <div class="social-link"> 
-                    <a href="#"><i class="fab fa-facebook"></i></a>
+        <footer class="bg-ligth text-dark pt-5 pb-4">
+
+          <div class="container text-center text-md-start">
+              <div class="row text-center text-md-start">
+                  <div class="col-md-3 coll-lg-3 col-xl-3 mx-auto mt-3">
+  
+                      <h5 class="text-uppercase mb-4 font-weigth-bold text-primary">Nosotros</h5>
+                      <hr class="mb-4">
+                      <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum consequatur laudantium esse, fuga in corporis tenetur provident! Tempora repellat cumque quo perferendis architecto incidunt impedit. Voluptatibus debitis est accusantium corporis?
+                      </p>
+  
                   </div>
-                </div>
-              </div> 
-        </footer>
-        
-        
-        
-
+  
+                  <div class="cold-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                      <h5 class="text-uppercase mb-4 font-weigth-bold text-primary">Ayuda</h5>
+                      <hr class="mb-4">
+                      <p>
+                          <a href="#" class="text-dark">Estatus de orden</a>
+                      </p>
+                      <p>
+                          <a href="#" class="text-dark">Preguntas</a>
+                      </p>
+                      <p>
+                          <a href="#" class="text-dark">Envios</a>
+                      </p>
+                      <p>
+                          <a href="#" class="text-dark">Pago</a>
+                      </p>
+                  </div>
+  
+                  <div class="cold-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                      <h5 class="text-uppercase mb-4 font-weigth-bold text-primary">Compañia</h5>
+                      <hr class="mb-4">
+                      <p>
+                          <a href="#" class="text-dark">Nosotros</a>
+                      </p>
+                      <p>
+                          <a href="#" class="text-dark">Nuestros servicios</a>
+                      </p>
+                      <p>
+                          <a href="#" class="text-dark">Politica de privacidad</a>
+                      </p>
+                      <p>
+                          <a href="#" class="text-dark">Afiliate</a>
+                      </p>
+                  </div>
+  
+                  <div class="cold-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                      <h5 class="text-uppercase mb-4 font-weigth-bold text-primary">Contacto</h5>
+                      <hr class="mb-4">
+                      <p>
+                          <li class="fas fa-home m3"></li>Barrio de Xochimilco, 68040 Oaxaca de Juárez, Oax.México
+                      </p>
+                      <p>
+                          <li class="fas fa-envelope m3"></li>daniel.ogarrio1@gmail.com
+                      </p>
+                      <p>
+                          <li class="fas fa-phone m3"></li>9512341241
+                      </p>
+                      <p>
+                          <li class="fas fa-print m3"></li>95123456
+                      </p>
+  
+                  </div>
+  
+                  <hr class="mb-4">
+                  <div class="text-center mb-2">
+                      <p>
+                          copyright Todos los derechos reservados
+                          <a href="#">
+                              <strong class="text-primary">Daniel Ogarrio</strong>
+                          </a>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </footer>
       
-
-
-      
-
 </body>
 </html>
