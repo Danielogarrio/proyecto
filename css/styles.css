@@ -4,14 +4,25 @@ carousel-item img {
   height: 350px; /* tamaño deseado para todas las imagenes */
   object-fit: cover; /* se ajusta la imagen para cubrir el tamaño definido */
 }
+
+
+
 h2{
-  font-size: large;
-  font-family: cursive;
-  color: red;
+  
+  .days-one-regular {
+    font-family: "Days One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
 }
 
 h4{
-  font-family: cursive;
+  .days-one-regular {
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
   
 }
 
@@ -133,9 +144,15 @@ h4{
   
 }
 
+
+
 .menu{
   background-color: burlywood;
-  
+  .martel-light {
+    font-family: "Martel", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
 
 }
 
@@ -227,5 +244,42 @@ background-color: chartreuse;
  text-align: center;
 }
 
+
+body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: rgb(36, 36, 223);
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid blueviolet;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: red;
+            color: orange;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
 
 /*# sourceMappingURL=styles.css.map */
