@@ -5,6 +5,9 @@ carousel-item img {
   object-fit: cover; 
 }
 
+#selec{
+  background-color: rgb(173, 132, 102);
+}
 
 
 h2{
@@ -109,7 +112,7 @@ h4{
   font-size: x-large;
 }
 
-#seccion1 {
+#seccion2 {
   background-color: #f2d786;
 }
 
@@ -139,14 +142,14 @@ h4{
 
 }
 
-.footer{
+#footer{
   background-color:rgb(186, 186, 73);
   
 }
 
 
 
-.menu{
+#menu{
   background-color: burlywood;
   .martel-light {
     font-family: "Martel", serif;
@@ -310,4 +313,5 @@ label {
     font-size: 24px;
    }
 
+   
 /*# sourceMappingURL=styles.css.map */
